@@ -4,13 +4,24 @@
 <head>
 </head>
 <body class="">
-<h1>AVAILABLE MANGA AND THEIR PRICES </h1>
+  
+<p>AVAILABLE MANGA AND THEIR PRICES </p>
+
+{% if user.is_authenticated %}
+
+<p> Hello, {{ user.first_name }}</p>
+
+{% endif %}
+
 <link rel="stylesheet" href="{% static 'style1.css' %}">
 <div class="alignRow">
 <div class="imageColumn">
 <img src="{% static 'naruto.jpg' %}" alt="Snow" style="width:70%">
+
 <p> NARUTO </p>
 <p>$40</p>
+
+    
 
 </div>
 <div class="imageColumn">
@@ -27,7 +38,26 @@
 <img src="{% static 'demonslayer.jpg' %}" alt="Snow" style="width:70%">
 <p> DEMON SLAYER </p>
 <p>$23</p>
+
+<div>
+    <a href="accounts/logout">LOGOUT </a>
+</div>
 </div>
 </div>>
 </body>
 </html>
+
+
+
+<div class="special">
+
+
+    <p>AVAILABLE MANGA AND THEIR PRICES </p>
+
+{% if user.is_authenticated %}
+
+<p> Hello, {{ user.first_name }}</p>
+
+{% endif %}
+
+</div>

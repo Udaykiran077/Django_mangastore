@@ -16,38 +16,34 @@
     <div class="main-block">
       <div class="left-part">
         <i class="fas fa-graduation-cap"></i>
-        <h1>REGISTRATION FORM </h1>
-        <p>REGISTER TO SEE THE AVAILABLE MANGA TO BUY</p>
+        <h1>LOGIN</h1>
+        <p>LOGIN WITH USER NAME AND PASSWORD</p>
        
       </div>
-      <form action="register" method="post">
+      <form action="login" method="post">
         {% csrf_token %}
+        
         <div class="title">
           <i class="fas fa-pencil-alt"></i> 
           <h2>Register here</h2>
         </div>
         <div class="info">
-          <input type="text" name="first_name" placeholder="First Name">
-          <input type="text" name="last_name" placeholder="Last Name">
+          
           <input type="text" name="username" placeholder="Username">
-          <input type="email" name="email" placeholder="email">
+          
           <input type="password" name="password1" placeholder="Password">
-          <input type="password" name="password2" placeholder="Confirm password">
-          <input type="submit">
 
-          {% for message in messages %}
-          <h3> {{message}} </h3>
-          {% endfor %}
-        </div>
+          <input type="submit">
           
         </div>
         
         
-      </form>
-
-      <div>
-       
+        {% for message in messages %}
+        <h3> {{message}} </h3>
+        {% endfor %}
       </div>
+        
+      </form>
     </div>
   </body>
 </html>
