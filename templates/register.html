@@ -1,0 +1,50 @@
+{% load static %}
+
+
+<link rel="stylesheet" href="{%static 'style2.css' %}">
+<div class="container"> 
+    {% csrf_token %}
+    
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title> REGISTRATION FORM </title>
+    
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>REGISTRATION FORM </h1>
+        <p>REGISTER TO SEE THE AVAILABLE MANGA TO BUY</p>
+       
+      </div>
+      <form action="/">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name">
+          <input type="text" name="name" placeholder="Email">
+          <input type="text" name="name" placeholder="Phone number">
+          <input type="password" name="name" placeholder="Password">
+          
+        </div>
+        
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+  </div>
